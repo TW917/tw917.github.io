@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>简历 | Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #1a1a1a;
+    }
+    h2 {
+      margin-top: 30px;
+    }
+    .section-title {
+      color: #0056b3;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .lang-switch {
+      margin-bottom: 30px;
+    }
+    .lang-switch button {
+      margin-right: 10px;
+      padding: 5px 10px;
+    }
+    .cn, .en {
+      display: none;
+    }
+  </style>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.cn').forEach(e => e.style.display = lang === 'cn' ? 'block' : 'none');
+      document.querySelectorAll('.en').forEach(e => e.style.display = lang === 'en' ? 'block' : 'none');
+    }
+    window.onload = () => switchLang('cn');
+  </script>
+</head>
+<body>
+
+  <div class="lang-switch">
+    <button onclick="switchLang('cn')">中文</button>
+    <button onclick="switchLang('en')">English</button>
+  </div>
+
+  <div class="cn">
+    <h1>韦皓骞</h1>
+    <p><strong>语言能力：</strong>英语 / 中文</p>
+    <div class="contact-info">
+      <p>44 St Joseph St, 多伦多, 安大略省, M4Y 2W4<br>
+      (+1) 647-986-0917<br>
+      <strong>学校邮箱：</strong> <a href="mailto:haoqian.wei@mail.utoronto.ca">haoqian.wei@mail.utoronto.ca</a><br>
+      <strong>个人邮箱：</strong> <a href="mailto:thomaswei3213@gmail.com">thomaswei3213@gmail.com</a></p>
+    </div>
+    <h2 class="section-title">教育背景</h2>
+    <p><strong>武汉英中学校 [IBDP]</strong><br>2020年9月 – 2023年6月</p>
+    <p><strong>多伦多大学</strong>，加拿大 — <em>本科</em><br>2023年9月 – 预计2028年6月<br>主修：工程科学 / 工程物理</p>
+    <h2 class="section-title">项目经历</h2>
+    <p><strong>Praxis I：</strong> <a href="Team 26 One-pager.pdf" target="_blank">蘑菇环境控制容器设计与原型搭建</a><br><em>主要贡献：</em> CAD设计与物理计算</p>
+    <p><strong>Praxis II：</strong> <a href="Team 0102C DD2 Visual Abstract.pdf.pdf" target="_blank">自动太阳能板清洁系统设计与开发</a><br><em>主要贡献：</em> CAD与原型搭建测试</p>
+    <h2 class="section-title">技能</h2>
+    <p><strong>技术技能：</strong></p>
+    <ul>
+      <li>Python（熟练）</li>
+      <li>MATLAB（熟练）</li>
+      <li>AutoCAD、Fusion360（熟练）</li>
+      <li>实验仪器操作经验丰富</li>
+    </ul>
+    <p><strong>软技能：</strong></p>
+    <ul>
+      <li>公众演讲</li>
+      <li>技术写作</li>
+      <li>项目规划</li>
+      <li>团队领导</li>
+    </ul>
+  </div>
+
+  <div class="en">
+    <h1>Haoqian Wei</h1>
+    <p><strong>Languages:</strong> English / Chinese</p>
+    <div class="contact-info">
+      <p>44 St Joseph St, Toronto, ON, M4Y 2W4<br>
+      (+1) 647-986-0917<br>
+      <strong>University Email:</strong> <a href="mailto:haoqian.wei@mail.utoronto.ca">haoqian.wei@mail.utoronto.ca</a><br>
+      <strong>Personal Email:</strong> <a href="mailto:thomaswei3213@gmail.com">thomaswei3213@gmail.com</a></p>
+    </div>
+    <h2 class="section-title">Education Background</h2>
+    <p><strong>Wuhan Britain-China School [IBDP]</strong><br>2020/9–2023/6</p>
+    <p><strong>University of Toronto</strong>, Canada — <em>Undergraduate</em><br>2023/9–2028.6 (Estimated)<br>Majored in Engineering Science / Engineering Physics</p>
+    <h2 class="section-title">Projects</h2>
+    <p><strong>Praxis I:</strong> <a href="Team 26 One-pager.pdf" target="_blank">Designing Mushroom Environment Controlled Container and Prototype</a><br><em>Main Contribution:</em> CAD and physical calculations</p>
+    <p><strong>Praxis II:</strong> <a href="Team 0102C DD2 Visual Abstract.pdf.pdf" target="_blank">Design and Development of Automated Solar Panel Cleaning System</a><br><em>Main Contribution:</em> CAD and physical prototyping</p>
+    <h2 class="section-title">Skills</h2>
+    <p><strong>Technical:</strong></p>
+    <ul>
+      <li>Python (experienced)</li>
+      <li>MATLAB (experienced)</li>
+      <li>AutoCAD, Fusion360 (experienced)</li>
+      <li>Skilled in lab equipment usage</li>
+    </ul>
+    <p><strong>Soft Skills:</strong></p>
+    <ul>
+      <li>Public Speaking</li>
+      <li>Technical Writing</li>
+      <li>Project Planning</li>
+      <li>Team Leadership</li>
+    </ul>
+  </div>
+
+</body>
+</html>
