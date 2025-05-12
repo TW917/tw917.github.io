@@ -54,9 +54,6 @@
       font-size: 1.4em;
       margin-bottom: 10px;
     }
-    .contact-info, .education, .projects, .skills {
-      margin-bottom: 20px;
-    }
     .info-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -79,12 +76,22 @@
     ul li {
       margin-bottom: 5px;
     }
-    .cn, .en {
-      display: none;
-    }
     .highlight {
       color: #0b3d91;
       font-weight: bold;
+    }
+    .project-entry {
+      margin-bottom: 12px;
+      padding-left: 10px;
+      border-left: 3px solid #ccc;
+    }
+    .project-entry strong {
+      display: block;
+      color: #0b3d91;
+      margin-bottom: 3px;
+    }
+    .cn, .en {
+      display: none;
     }
   </style>
   <script>
@@ -102,63 +109,131 @@
   </div>
   <div class="container">
 
-    <div class="cn">
-      <div class="header">
+    <div class=\"cn\">
+      <div class=\"header\">
         <h1>韦皓骞</h1>
+        <img src=\"https://via.placeholder.com/120\" alt=\"Profile Photo\" class=\"profile-pic\">
+      </div>
+      <div class=\"section\">
+        <h2>基本信息</h2>
+        <div class=\"info-grid\">
+          <p><strong>地址：</strong>加拿大多伦多</p>
+          <p><strong>电话：</strong>+1 647-986-0917</p>
+          <p><strong>学校邮箱：</strong><a href=\"mailto:haoqian.wei@mail.utoronto.ca\">haoqian.wei@mail.utoronto.ca</a></p>
+          <p><strong>个人邮箱：</strong><a href=\"mailto:thomaswei3213@gmail.com\">thomaswei3213@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class=\"section\">
+        <h2>教育背景</h2>
+        <p><strong>武汉英中学校 [IBDP]</strong> — 2020年9月 – 2023年6月</p>
+        <p><strong>多伦多大学</strong>，加拿大 — 工程科学 / 工程物理 本科在读（预计2028年毕业）</p>
+      </div>
+
+      <div class=\"section\">
+        <h2>相关课程</h2>
+        <ul>
+          <li><span class=\"highlight\">ESC180：</span>计算机编程入门（Python）</li>
+          <li><span class=\"highlight\">ESC190：</span>算法与数据结构</li>
+          <li><span class=\"highlight\">ESC194/195：</span>微积分 I/II</li>
+          <li><span class=\"highlight\">MAT185：</span>线性代数</li>
+          <li><span class=\"highlight\">MAT292：</span>常微分方程</li>
+          <li><span class=\"highlight\">ECE286：</span>概率与统计</li>
+          <li><span class=\"highlight\">CIV102：</span>结构与材料——工程设计导论</li>
+          <li><span class=\"highlight\">PHY180：</span>经典力学</li>
+          <li><span class=\"highlight\">ECE159：</span>电路基础</li>
+          <li><span class=\"highlight\">AER210：</span>向量微积分与流体力学</li>
+          <li><span class=\"highlight\">PHY293：</span>波动与现代物理</li>
+          <li><span class=\"highlight\">ECE259：</span>电磁学</li>
+          <li><span class=\"highlight\">CHE260：</span>热力学与传热</li>
+          <li><span class=\"highlight\">PHY294：</span>量子与热物理</li>
+        </ul>
+      </div>
+
+      <div class=\"section\">
+        <h2>项目经历</h2>
+        <div class=\"project-entry\">
+          <strong>Praxis I 课程项目：</strong>
+          <a href=\"Team 26 One-pager.pdf\" target=\"_blank\">蘑菇环境控制容器的设计与原型搭建</a><br>
+          <em>主要贡献：</em> CAD设计与物理计算
+        </div>
+        <div class=\"project-entry\">
+          <strong>Praxis II 课程项目：</strong>
+          <a href=\"Team_0102C_DD2_Visual_Abstract.pdf\" target=\"_blank\">自动太阳能板清洁系统的设计与原型开发</a><br>
+          <em>主要贡献：</em> 部分CAD与大部分物理搭建与调试
+        </div>
+        <div class=\"project-entry\">
+          <strong>CIV102 课程项目：</strong>
+          <a href=\"Bridge report.pdf\" target=\"_blank\">设计一个由卡纸构成、可承受400N动态载荷的桥梁</a><br>
+          <em>主要贡献：</em> 结构设计与应力分析
+        </div>
+      </div>
+
+    <div class="en">
+      <div class="header">
+        <h1>Haoqian Wei</h1>
         <img src="https://via.placeholder.com/120" alt="Profile Photo" class="profile-pic">
       </div>
       <div class="section">
-        <h2>基本信息</h2>
+        <h2>Basic Information</h2>
         <div class="info-grid">
-          <p><strong>地址：</strong>多伦多, 安大略省</p>
-          <p><strong>电话：</strong>+86 17720503523</p>
-          <p><strong>学校邮箱：</strong><a href="mailto:haoqian.wei@mail.utoronto.ca">haoqian.wei@mail.utoronto.ca</a></p>
-          <p><strong>个人邮箱：</strong><a href="mailto:thomaswei3213@gmail.com">thomaswei3213@gmail.com</a></p>
+          <p><strong>Address:</strong> Toronto, ON, Canada</p>
+          <p><strong>Phone:</strong> +1 647-986-0917</p>
+          <p><strong>University Email:</strong> <a href="mailto:haoqian.wei@mail.utoronto.ca">haoqian.wei@mail.utoronto.ca</a></p>
+          <p><strong>Personal Email:</strong> <a href="mailto:thomaswei3213@gmail.com">thomaswei3213@gmail.com</a></p>
         </div>
       </div>
 
       <div class="section">
-        <h2>教育背景</h2>
-        <p><strong>武汉英中学校 [IBDP]</strong> — 2020年9月–2023年6月</p>
-        <p><strong>多伦多大学</strong>，加拿大 — 本科在读，工程科学 / 工程物理（预计2028年毕业）</p>
+        <h2>Education</h2>
+        <p><strong>Wuhan Britain-China School [IBDP]</strong> — Sep 2020 – Jun 2023</p>
+        <p><strong>University of Toronto</strong>, Canada — Undergraduate in Engineering Science / Engineering Physics (Expected 2028)</p>
       </div>
 
       <div class="section">
-        <h2>相关课程</h2>
+        <h2>Relevant Coursework</h2>
         <ul>
-          <li><span class="highlight">ESC180：</span>计算机编程入门（Python）</li>
-          <li><span class="highlight">ESC190：</span>算法与数据结构</li>
-          <li><span class="highlight">ESC194/195：</span>微积分 I/II</li>
-          <li><span class="highlight">MAT185：</span>线性代数</li>
-          <li><span class="highlight">MAT292：</span>常微分方程</li>
-          <li><span class="highlight">ECE286：</span>概率与统计</li>
-          <li><span class="highlight">CIV102：</span>结构与材料——工程设计导论</li>
-          <li><span class="highlight">PHY180：</span>经典力学</li>
-          <li><span class="highlight">ECE159：</span>电路基础</li>
-          <li><span class="highlight">AER210：</span>向量微积分与流体力学</li>
-          <li><span class="highlight">PHY293：</span>波动与现代物理</li>
-          <li><span class="highlight">ECE259：</span>电磁学</li>
-          <li><span class="highlight">CHE260：</span>热力学与传热</li>
-          <li><span class="highlight">PHY294：</span>量子与热物理</li>
+          <li><span class="highlight">ESC180:</span> Introduction to Computer Programming (Python)</li>
+          <li><span class="highlight">ESC190:</span> Algorithms and Data Structures</li>
+          <li><span class="highlight">ESC194/195:</span> Calculus I/II</li>
+          <li><span class="highlight">MAT185:</span> Linear Algebra</li>
+          <li><span class="highlight">MAT292:</span> Ordinary Differential Equations</li>
+          <li><span class="highlight">ECE286:</span> Probability and Statistics</li>
+          <li><span class="highlight">CIV102:</span> Structures and Materials – Introduction to Engineering Design</li>
+          <li><span class="highlight">PHY180:</span> Classical Mechanics</li>
+          <li><span class="highlight">ECE159:</span> Fundamentals of Electric Circuits</li>
+          <li><span class="highlight">AER210:</span> Vector Calculus & Fluid Mechanics</li>
+          <li><span class="highlight">PHY293:</span> Waves and Modern Physics</li>
+          <li><span class="highlight">ECE259:</span> Electromagnetism</li>
+          <li><span class="highlight">CHE260:</span> Thermodynamics and Heat Transfer</li>
+          <li><span class="highlight">PHY294:</span> Quantum and Thermal Physics</li>
         </ul>
       </div>
 
       <div class="section">
-        <h2>项目经历</h2>
-        <p><strong>Praxis I 项目：</strong><a href="Team 26 One-pager.pdf" target="_blank">蘑菇环境控制容器设计与原型搭建</a><br>主要贡献：CAD设计与物理计算</p>
-        <p><strong>Praxis II 项目：</strong><a href="Team 0102C DD2 Visual Abstract.pdf.pdf" target="_blank">自动太阳能板清洁系统设计与开发</a><br>主要贡献：CAD与原型构建与调试</p>
+        <h2>Projects</h2>
+        <div class="project-entry">
+          <strong>Praxis I Course Project:</strong>
+          <a href="Team 26 One-pager.pdf" target="_blank">Designing in Mushroom Environment Controlled Container and Building Prototype</a><br>
+          Main Contribution: CAD and Physical calculation
+        </div>
+        <div class="project-entry">
+          <strong>Praxis II Course Project:</strong>
+          <a href="Team_0102C_DD2_Visual_Abstract.pdf" target="_blank">Design and build a prototype for the Automated Solar Panel Cleaning System</a><br>
+          Main Contribution: Partial CAD and most of the physical building and testing/debugging of the prototype
+        </div>
+        <div class="project-entry">
+          <strong>CIV102 Course Project:</strong>
+          <a href="Bridge report.pdf" target="_blank">Design a bridge made of matboard that can hold 400N dynamic load</a><br>
+          Main Contribution: Structural calculations, design validation, and testing methodology
+        </div>
       </div>
 
       <div class="section">
-        <h2>技能</h2>
-        <p><strong>技术：</strong>Python（熟练），MATLAB（熟练），AutoCAD（熟练），Fusion360（熟练），熟练操作实验设备</p>
-        <p><strong>软技能：</strong>公众演讲，技术写作，项目规划，团队领导</p>
+        <h2>Skills</h2>
+        <p><strong>Technical:</strong> Python (experienced), MATLAB (experienced), AutoCAD (experienced), Fusion360 (experienced), skilled in lab equipment usage</p>
+        <p><strong>Soft Skills:</strong> Public speaking, technical writing, project planning, team leadership</p>
       </div>
-    </div>
-
-    <!-- The English version layout will be styled similarly -->
-    <div class="en">
-      <!-- You can paste English content here if you want the same style -->
     </div>
 
   </div>
